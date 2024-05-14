@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="228.0" prefWidth="274.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.projectfx.HelloController">
+   <children>
+      <Label fx:id="Labeltext" contentDisplay="CENTER" layoutX="25.0" layoutY="14.0" prefHeight="64.0" prefWidth="228.0" text="Загадай число" textFill="#a64d4d" wrapText="true">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font></Label>
+      <Button fx:id="GuessTheNumberButton" layoutX="167.0" layoutY="87.0" mnemonicParsing="false" onAction="#userAttemp" prefHeight="37.0" prefWidth="88.0" text="Enter" />
+      <Label layoutX="25.0" layoutY="146.0" text="Твоє число" />
+      <TextField fx:id="TestTextField" layoutX="25.0" layoutY="87.0" onAction="#labelTextOnTestField" prefHeight="38.0" prefWidth="129.0" />
+      <Label fx:id="NumberTextField" alignment="CENTER" contentDisplay="CENTER" layoutX="170.0" layoutY="133.0" prefHeight="28.0" prefWidth="69.0" textAlignment="CENTER" textFill="#c11a11" textOverrun="CENTER_ELLIPSIS">
+         <font>
+            <Font name="Gargi" size="22.0" />
+         </font>
+      </Label>
+      <Label layoutX="25.0" layoutY="176.0" text="Кількість спроб" />
+      <Label fx:id="numberOfAttemps" alignment="CENTER" layoutX="167.0" layoutY="170.0" prefHeight="28.0" prefWidth="75.0" textFill="#c11d1d">
+         <font>
+            <Font name="System Bold" size="17.0" />
+         </font></Label>
+      <Button fx:id="restartButton" layoutX="194.0" layoutY="193.0" mnemonicParsing="false" onAction="#restartProgram" text="Restart" />
+   </children>
+</AnchorPane>
